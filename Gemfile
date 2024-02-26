@@ -47,6 +47,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem "ruby-debug-ide", require: false
+  gem 'debase', '~> 0.2.5.beta2', require: false
+  gem 'solargraph', require: false
 end
 
 group :development do
@@ -67,3 +70,5 @@ group :test do
 end
 
 gem "table_print", "~> 1.5"
+
+gem "devise", "~> 4.9"
