@@ -98,6 +98,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.default_url_options = { host: "my-eventbrite-polished-waterfall-4673-long-night-6097-quiet-snowflake-1895-empty-grass-8244-dawn-glade-3893.fly.dev" }
+
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com

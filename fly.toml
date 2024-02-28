@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for my-eventbrite-polished-waterfall-4673-long-night-6097-quiet-snowflake-1895-empty-grass-8244-dawn-glade-3893 on 2024-02-28T17:20:21+01:00
+# fly.toml app configuration file generated for my-eventbrite-withered-sky-9642 on 2024-02-28T22:07:13+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'my-eventbrite-polished-waterfall-4673-long-night-6097-quiet-snowflake-1895-empty-grass-8244-dawn-glade-3893'
+app = 'my-eventbrite-withered-sky-9642'
 primary_region = 'cdg'
 console_command = '/rails/bin/rails console'
 
@@ -36,9 +36,9 @@ console_command = '/rails/bin/rails console'
       X-Forwarded-Proto = 'https'
 
 [[vm]]
-  memory = '1gb'
+  memory = '2gb'
   cpu_kind = 'shared'
-  cpus = 1
+  cpus = 2
 
 [[statics]]
   guest_path = '/rails/public'
