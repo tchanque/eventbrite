@@ -1,6 +1,6 @@
 # Class for the mailer
 class UserMailer < ApplicationMailer
-  default from: ENV['MAILJET_URL']
+  default from: ENV['MAILJET_DEFAULT_FROM']
 
   def welcome_email(user)
     @user = user

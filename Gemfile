@@ -2,14 +2,26 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem 'table_print'
+
+gem 'faker'
+
+gem 'dotenv'
+
+gem 'devise'
+
+gem 'stripe'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3", ">= 7.1.3.2"
+gem "rails", "~> 7.1.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.1"
+
+gem "sqlite3"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -47,9 +59,6 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
-  gem "ruby-debug-ide", require: false
-  gem 'debase', '~> 0.2.5.beta2', require: false
-  gem 'solargraph', require: false
 end
 
 group :development do
@@ -69,6 +78,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "table_print", "~> 1.5"
-
-gem "devise", "~> 4.9"
+gem "dockerfile-rails", ">= 1.6", :group => :development
